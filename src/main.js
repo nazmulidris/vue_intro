@@ -1,4 +1,4 @@
-import './todoComponent.js';
+import './TodoItemComponent.js';
 
 new Vue({
           el  : '#app_basic',
