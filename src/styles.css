@@ -1,21 +1,25 @@
 /* CSS variables that can be used anywhere in this file */
 
 :root {
-  --light-gray-color: #F3F3F3;
-  --dark-gray-color: #DADADA;
-  --padding: 12pt;
+    --light-gray-color: #F3F3F3;
+    --dark-gray-color: #DADADA;
+    --padding: 12pt;
 }
 
 /* Each experiment is wrapped in a div with this style */
 
 .experiment-block {
-  background-color: var( --light-gray-color);
-  margin: var(--padding);
-  padding: var(--padding);
-  border: var(--dark-gray-color) dashed 2pt;
+    background-color: var(--light-gray-color);
+    margin: var(--padding);
+    padding: var(--padding);
+    border: var(--dark-gray-color) dashed 2pt;
 }
 
 body {
-  font-family: "Open Sans";
-  font-size: 13pt;
+    font-family: "Open Sans";
+    font-size: 13pt;
+}
+
+.strike {
+    text-decoration: line-through;
 }
