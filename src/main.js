@@ -1,5 +1,3 @@
-// src/main.js
-
 new Vue(
   {
     el  : '#app-basic',
