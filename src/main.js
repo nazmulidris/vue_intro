@@ -21,3 +21,17 @@ const vue_app2 = new Vue(
       ],
     },
   });
+
+const vue_app3 = new Vue(
+  {
+    el: '#app-3',
+    data: {
+      message: "Click me (random number generate)",
+    },
+    methods: {
+      randomGenerate() {
+        this.message = Math.random();
+      },
+    },
+  },
+);
