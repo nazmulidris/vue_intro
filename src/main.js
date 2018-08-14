@@ -35,3 +35,12 @@ const vue_app3 = new Vue(
     },
   },
 );
+
+const vue_app4 = new Vue(
+  {
+    el: '#app-4',
+    data: {
+      value: "Some string data"
+    }
+  }
+);
