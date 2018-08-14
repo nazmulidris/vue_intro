@@ -1,8 +1,8 @@
 // src/main.js
 
-const vue_app_1 = new Vue(
+new Vue(
   {
-    el  : '#app',
+    el  : '#app-basic',
     data: {
       message  : '🐵 Monkey balls 🔮',
       timestamp: `Timestamp ${new Date().toLocaleString()}`,
@@ -10,9 +10,9 @@ const vue_app_1 = new Vue(
   });
 
 
-const vue_app2 = new Vue(
+new Vue(
   {
-    el  : '#app-2',
+    el  : '#app-loops',
     data: {
       todos: [
         {text: 'Learn JavaScript'},
@@ -22,9 +22,9 @@ const vue_app2 = new Vue(
     },
   });
 
-const vue_app3 = new Vue(
+new Vue(
   {
-    el: '#app-3',
+    el: '#app-onclick',
     data: {
       message: "Click me (random number generate)",
     },
@@ -36,9 +36,9 @@ const vue_app3 = new Vue(
   },
 );
 
-const vue_app4 = new Vue(
+new Vue(
   {
-    el: '#app-4',
+    el: '#app-model',
     data: {
       value: "Some string data"
     }

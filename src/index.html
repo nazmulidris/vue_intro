@@ -10,14 +10,22 @@
     <!-- import es6 module in main.js -->
     <script src="main.js" type="module"></script>
 
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-<div id="app" v-bind:title="timestamp">
+<!-- Basic usage -->
+<div id="app-basic"
+     v-bind:title="timestamp"
+     class="experiment-block">
     {{ message }}
 </div>
 
-<div id="app-2">
+<!-- Loops -->
+<div id="app-loops"
+     class="experiment-block">
     <ol>
         <li v-for="todo in todos">
             {{ todo.text }}
@@ -25,12 +33,16 @@
     </ol>
 </div>
 
-<div id="app-3">
+<!-- OnClick -->
+<div id="app-onclick"
+     class="experiment-block">
     <span>{{ message }}</span>
     <button v-on:click="randomGenerate">Click me</button>
 </div>
 
-<div id="app-4">
+<!-- Data binding -->
+<div id="app-model"
+     class="experiment-block">
     <p>{{ value }}</p>
     <input v-model="value">
 </div>
