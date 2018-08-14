@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Vue Test</title>
+  <meta charset="UTF-8">
+  <title>Vue Test</title>
 
-    <!-- This is a development version of Vue.js! -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- This is a development version of Vue.js! -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <!-- import es6 module in main.js -->
-    <script src="main.js" type="module"></script>
+  <!-- import es6 module in main.js -->
+  <script src="main.js" type="module"></script>
 
-    <!-- import stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- import stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>
+
 <body>
 
-<!-- Basic usage -->
-<div id="app-basic"
-     v-bind:title="timestamp"
-     class="experiment-block">
+  <!-- Basic usage -->
+  <div id="app-basic" v-bind:title="timestamp" class="experiment-block">
     {{ message }}
-</div>
+  </div>
 
-<!-- Loops -->
-<div id="app-loops"
-     class="experiment-block">
+  <!-- Loops -->
+  <div id="app-loops" class="experiment-block">
     <ol>
-        <li v-for="todo in todos">
-            {{ todo.text }}
-        </li>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
     </ol>
-</div>
+  </div>
 
-<!-- OnClick -->
-<div id="app-onclick"
-     class="experiment-block">
+  <!-- OnClick -->
+  <div id="app-onclick" class="experiment-block">
     <span>{{ message }}</span>
     <button v-on:click="randomGenerate">Click me</button>
-</div>
+  </div>
 
-<!-- Data binding -->
-<div id="app-model"
-     class="experiment-block">
+  <!-- Data binding -->
+  <div id="app-model" class="experiment-block">
     <p>{{ value }}</p>
     <input v-model="value">
-</div>
+  </div>
 
 </body>
+
 </html>
