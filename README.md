@@ -19,11 +19,11 @@ on this CORS (cross origin resource sharing) policy.
 This is the folder and file structure of the project.
 
 ```text
-├── package.json
-└── src
-    ├── components
-    ├── index.html
-    └── main.js
++-- package.json
++-- src
+    +-- components
+    +-- index.html
+    +-- main.js
 ```
 
 And here's the `package.json` script that's needed to launch the local web
