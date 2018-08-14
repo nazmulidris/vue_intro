@@ -4,11 +4,11 @@ Vue.component(
     {
         props: ['todo_list_prop'],
         template:
-            '<ol>\
-                 <todo_item v-for="item in todo_list_prop"\
-                            v-bind:todo_item_prop="item"\
-                            v-bind:key="item.id"/>\
-             </ol>'
+            `<ol>
+                 <todo_item v-for="item in todo_list_prop"
+                            v-bind:todo_item_prop="item"
+                            v-bind:key="item.id"/>
+             </ol>`
     },
 );
 
@@ -18,9 +18,9 @@ Vue.component(
     {
         props: ['todo_item_prop'],
         template:
-            '<li v-bind:class="{ strike: todo_item_prop.done }">\
-              {{ todo_item_prop.text }}\
-            </li>',
+            `<li v-bind:class="{ strike: todo_item_prop.done }">
+              {{ todo_item_prop.text }}
+            </li>`
     },
 );
 
