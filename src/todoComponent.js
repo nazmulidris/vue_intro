@@ -3,9 +3,8 @@ Vue.component(
   {
     props   : ['todo_item_prop'],
     template:
-      '<li>'
-      + '<span v-if="todo_item_prop.done" class="strike">{{todo_item_prop.text}}</span>'
-      + '<span v-else="todo_item_prop.done">{{todo_item_prop.text}}</span>'
+      '<li v-bind:class="{ strike: todo_item_prop.done }">'
+      + '{{ todo_item_prop.text }}'
       + '</li>',
   },
 );

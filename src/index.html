@@ -50,11 +50,9 @@
 <!--  Components -->
 <div id="app_component" class="experiment-block">
     <ol>
-        <todo_item
-                v-for="item in todoList"
-                v-bind:todo_item_prop='item'
-                v-bind:key='item.id'>
-        </todo_item>
+        <todo_item v-for="item in todoList"
+                   v-bind:todo_item_prop='item'
+                   v-bind:key='item.id'/>
     </ol>
 </div>
 
