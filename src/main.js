@@ -1,44 +1,48 @@
-import './TodoItemComponent.js';
+import './TodoComponents.js';
 
-new Vue({
-          el  : '#app_basic',
-          data: {
-            message  : '🐵 Monkey balls 🔮',
+new Vue(
+    {
+        el: '#app_basic',
+        data: {
+            message: '🐵 Monkey balls 🔮',
             timestamp: `Timestamp ${new Date().toLocaleString()}`,
-          },
-        });
+        },
+    });
 
-new Vue({
-          el  : '#app_loops',
-          data: {
+new Vue(
+    {
+        el: '#app_loops',
+        data: {
             todos: [{
-              text: 'Learn JavaScript',
+                text: 'Learn JavaScript',
             },
-                    {
-                      text: 'Learn Vue',
-                    },
-                    {
-                      text: 'Build something awesome',
-                    },
+                {
+                    text: 'Learn Vue',
+                },
+                {
+                    text: 'Build something awesome',
+                },
             ],
-          },
-        });
+        },
+    });
 
-new Vue({
-          el     : '#app_onclick',
-          data   : {
+new Vue(
+    {
+        el: '#app_onclick',
+        data: {
             message: "Click me (random number generate)",
-          },
-          methods: {
+        },
+        methods: {
             randomGenerate() {
-              this.message = Math.random();
+                this.message = Math.random();
             },
-          },
-        });
+        },
+    });
 
-new Vue({
-          el  : '#app_model',
-          data: {
+new Vue(
+    {
+        el: '#app_model',
+        data: {
             value: "Some string data",
-          },
-        });
+        },
+    });
