@@ -1,8 +1,9 @@
 # Introduction
 
 Build a basic [Vue](https://vuejs.org/v2/guide/) project without
-using Webpack. Here's a [tutorial](http://tinyurl.com/y7cr7jt6)
-that I got most of this from.
+using Webpack. Here's a [tutorial on developerlife.com](
+https://developerlife.com/2018/08/15/introduction-to-vue/)
+that provides a detailed explanation of the code in this repo.
 
 # Single origin policy
 
