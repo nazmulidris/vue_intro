@@ -4,7 +4,7 @@ new Vue(
     {
         el: '#app_basic',
         data: {
-            message: '🐵 Monkey balls 🔮',
+            message: '🐵 Hello World 🔮',
             timestamp: `Timestamp ${new Date().toLocaleString()}`,
         },
     });
