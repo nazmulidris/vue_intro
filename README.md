@@ -22,9 +22,10 @@ This is the folder and file structure of the project.
 ```text
 +-- package.json
 +-- src
-    +-- components
+    +-- TodoComponents.js
     +-- index.html
     +-- main.js
+    +-- styles.css
 ```
 
 And here's the `package.json` script that's needed to launch the local web
