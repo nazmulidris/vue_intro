@@ -1,23 +1,64 @@
 /* CSS variables that can be used anywhere in this file */
-
 :root {
     --light-gray-color: #F3F3F3;
     --dark-gray-color: #DADADA;
-    --padding: 12pt;
+    --space-around: 12pt;
+    --board-width: 150pt;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: "Open Sans", serif;
+    font-size: 13pt;
+}
+
+/* Board styles */
+.app_container {
+    margin: var(--space-around);
+    background-color: var(--light-gray-color);
+}
+
+#input_container {
+    display: flex;
+    justify-content: center;
+}
+
+.text_input {
+    font-family: "Cousine", monospace;
+    font-size: 1.2em;
+}
+
+#board_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-gray-color);
+    margin: var(--space-around);
+    width: var(--board-width);
+}
+
+.card {
 }
 
 /* Each experiment is wrapped in a div with this style */
 
 .experiment-block {
     background-color: var(--light-gray-color);
-    margin: var(--padding);
-    padding: var(--padding);
+    margin: var(--space-around);
+    padding: var(--space-around);
     border: var(--dark-gray-color) dashed 2pt;
-}
-
-body {
-    font-family: "Open Sans";
-    font-size: 13pt;
 }
 
 .strike {

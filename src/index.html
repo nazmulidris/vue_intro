@@ -3,54 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Vue Test</title>
+    <title>Kanban POC</title>
 
     <!-- This is a development version of Vue.js! -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <!-- import es6 module in main.js -->
-    <script src="main.js" type="module"></script>
+    <!-- import es6 module in TodoComponents.js -->
+    <script src="TodoComponents.js" type="module"></script>
 
     <!-- import stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Open+Sans"
+          rel="stylesheet">
 
 </head>
 
-<body>
+<body class="app_container">
 
-<!-- Basic usage -->
-<div id="app_basic" v-bind:title="timestamp" class="experiment-block">
-    {{ message }}
-</div>
+<header id="input_container">
+    <input class="text_input"
+           type="text"
+           placeholder="Enter command"
+           size="35"/>
+</header>
 
-<!-- Loops -->
-<div id="app_loops" class="experiment-block">
-    <ol>
-        <li v-for="todo in todos">
-            {{ todo.text }}
-        </li>
-    </ol>
-</div>
+<main id="board_container">
 
-<!-- OnClick -->
-<div id="app_onclick" class="experiment-block">
-    <span>{{ message }}</span>
-    <button v-on:click="randomGenerate">Click me</button>
-</div>
+    <article id="board1"
+             class="board">
+        <h1>Board1</h1>
+        <section class="card">Card1.1</section>
+        <section class="card">Card1.2</section>
+    </article>
 
-<!-- Data binding -->
-<div id="app_model" class="experiment-block">
-    <p>{{ value }}</p>
-    <input v-model="value">
-</div>
+    <article id="board2"
+             class="board">
+        <h1>Board2</h1>
+        <section class="card">Card2.1</section>
+    </article>
+
+    <article id="board3"
+             class="board">
+        <h1>Board3</h1>
+        <section class="card">Card3.1</section>
+        <section class="card">Card3.2</section>
+    </article>
+
+</main>
 
 <!--  Components -->
-<div id="app_component" class="experiment-block">
-    <todo_list v-bind:todo_list_prop="todoList"/>
-</div>
+<!--<div id="app_component" class="experiment-block">-->
+<!--<todo_list v-bind:todo_list_prop="todoList"/>-->
+<!--</div>-->
 
 </body>
 
